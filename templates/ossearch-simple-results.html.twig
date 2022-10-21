@@ -1,0 +1,25 @@
+{# ossearch_simple/templates/ossearch-simple-results.html.twig #}
+<div class="ossearch-simple-results">
+  {{ search_form }}
+
+  {{ search_results.controlbar }}
+
+  {% if keymatch_results %}
+    {{ keymatch_results }}
+  {% endif %}
+
+  <div class="ossearch-simple-results__wrapper">
+    {% if search_results and search_results.rows > 0 %}
+      <ol>
+        {% for result in search_results.rows %}
+          <li>
+            {{ result.rendered }}
+          </li>
+        {% endfor %}
+      </ol>
+      {% if search_pages %}
+        {{ search_pages }}
+      {% endif %}
+    {% endif %}
+  </div>
+</div>

@@ -1,0 +1,20 @@
+{#
+ /**
+  * @file
+  * Contains theme representation of control bar
+  *
+  * Available variables:
+  *  - results - the search results
+  */
+#}
+
+  <div class="ossearch-simple-results-control-bar clearfix">
+    <div class="ossearch-simple-results-control-bar__stats">
+      {% if results.start_row %}
+        Showing results {{ results.start_row }} - {{ results.end_row }} of {{ results.num_found }}{% if search_form.query_term['#value']!= '' %} for <em class="placeholder">{{ search_form.query_term['#value'] }}</em>{% endif %}
+      {% else %}
+        No results found.
+      {% endif %}
+    </div>
+  </div>
+

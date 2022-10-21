@@ -1,0 +1,9 @@
+<div class="ossearch-simple-keymatch-results">
+  {% for keyMatch in results %}
+    <div class="ossearch-simple-keymatch-result">
+      <a class="ossearch-simple-keymatch-result__title" href="{{ keyMatch.url }}">{{ keyMatch.title }}</a>
+      <div class="ossearch-simple-keymatch-result__url">{{ keyMatch.url }}</div>
+    </div>
+  {% endfor %}
+</div>
+

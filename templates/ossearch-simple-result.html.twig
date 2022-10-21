@@ -1,0 +1,6 @@
+<div class="search-result__title">
+  <a href="{{ result.url }}" title="{{ result.title }}">
+    {% autoescape false %}{{ result.title }}{% endautoescape %}
+  </a>
+</div>
+<div class="ossearch-simple-result__snippet-info">{% autoescape false %}{{ result.context }}{% endautoescape %}</div>

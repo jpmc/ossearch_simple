@@ -1,0 +1,13 @@
+{
+    "name": "ossearch_simple",
+    "description": "Simple Drupal 8 module for Open Source Search queries",
+    "type": "drupal-module",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Rebecca Bartlett",
+            "email": "rbartlett@quotient-inc.com"
+        }
+    ],
+    "require": {}
+}
