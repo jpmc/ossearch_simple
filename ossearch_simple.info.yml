@@ -2,7 +2,6 @@ name: Smithsonian Open Source Search
 type: module
 description: Admin UI for creating and editing simple search forms and results
 package: Smithsonian
-core: 8.x
-core_version_requirement: ^8 || ^9
+core_version_requirement: ^8 || ^9 || ^10
 dependencies:
   - drupal:block
